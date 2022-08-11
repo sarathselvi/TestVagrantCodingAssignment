@@ -16,7 +16,7 @@ public class VerifyWicketKeeper {
 
 		String response = new String(Files.readAllBytes(Paths.get(FrameworkConstants.getJsonresponse())));
 
-		Assert.assertEquals(response.contains("Wicket-keeper"), false);
+		Assert.assertEquals(response.toLowerCase().contains("wicket-keeper"), true);
 
 	}
 
